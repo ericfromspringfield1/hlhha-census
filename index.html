@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="counter.css">
+    <title>Smiirl Counter</title>
+</head>
+<body>
+     
+<section class="content">
+    <h1 class="content__heading">Update The Custom Smiirl Counter</h1>
+    <p class="content__lede">Enter The Number Below & Send To Counter!</p>
+    <form class="content__form contact-form"> 
+      
+      <div class="contact-form__input-group">
+        <label class="contact-form__label" for="name">Count</label>
+        <input class="contact-form__input contact-form__input--text" id="count" name="count" type="number"/>
+      </div>
+      
+      
+      <button class="contact-form__button" type="submit">Send To Counter!</button>
+    </form>
+  </section>
+  <div class="results">
+    <h2 class="results__heading">Data Being Sent To Smiirl</h2>
+    <pre class="results__display-wrapper"><code class="results__display"></code></pre>
+  </div>
+ <script src="counter.js"></script>
+</body>
+</html>
