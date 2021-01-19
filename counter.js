@@ -1,6 +1,6 @@
 const latestURL = "https://storage.cloud.google.com/smiirl_census/smiirl/db.json%3Alatest.json"
 const postCountURL = "https://storage.cloud.google.com/smiirl_bucket/db%20(4).json"
-const key = "AIzaSyDJjUVsoZcy02X8j3rtzNb_y_ZYp5Kyuwc"
+const key = 
 
 
 
