@@ -1,5 +1,6 @@
-const latestURL = "https://ericfromspringfield1.github.io/hlhha-census/latest.json"
-const postCountURL = "https://ericfromspringfield1.github.io/hlhha-census/census.json"
+const latestURL = "https://storage.cloud.google.com/smiirl_census/smiirl/db.json%3Alatest.json"
+const postCountURL = "https://storage.cloud.google.com/smiirl_bucket/db%20(4).json"
+const key = "AIzaSyDJjUVsoZcy02X8j3rtzNb_y_ZYp5Kyuwc"
 
 
 
@@ -25,6 +26,7 @@ fetch(latestURL, {
     method: "GET",
     headers: {
         "Content-Type": "application/json",
+        "key": key
         },
         })
 .then(response => response.json())
@@ -36,6 +38,7 @@ const postCount = (data) => {
      method: "PUT",
      headers: {
     "Content-Type": "application/json",
+            "key": key
      },
      body: JSON.stringify(data),
      })
@@ -56,4 +59,6 @@ form.addEventListener('submit', handleFormSubmit);
 const isValidElement = element => {
     return element.name && element.value;
 }
+
+
 
